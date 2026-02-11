@@ -1,5 +1,5 @@
 # Build stage
-FROM --platform=linux/amd64 golang:1.25-alpine AS builder
+FROM --platform=linux/amd64 golang:1.26-alpine AS builder
 ARG APP_VERSION
 
 # Install build dependencies (Only needed if CGO_ENABLED=1)
