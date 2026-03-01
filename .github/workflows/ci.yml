@@ -168,7 +168,7 @@ jobs:
         echo "Digest: $digest"
 
     - name: Upload digest
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: digests-${{ steps.platform.outputs.os }}-${{ steps.platform.outputs.arch }}
         path: /tmp/digests/*
